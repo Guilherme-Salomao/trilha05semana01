@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //Para calcular o volume (m³) da piscina com base circular (um cilindro), basta multiplicar a área da base pela altura.
+        // 1m³ = 1000L  π = 3.14
+
+        function calcularVolume(altura, raio) {
+            var pi = 3.14;
+            var area = pi * (raio * raio);
+            var volume = (area * altura) * 1000;
+            document.write("A quantidade de litros que a piscina suporta é: " + volume);
+        }
+
+        var altura = parseFloat(prompt("Digite a altura da piscina."));
+        var raio = parseFloat(prompt("Digite o raio da piscina."));
+
+        calcularVolume(altura, raio);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

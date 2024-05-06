@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //Crie uma lista chamada pessoa, coloque valores dentro dela como:
+        //nome (string), idade (inteiro), CPF (string), altura (decimal), se é maior de idade ou não (valor booleano true ou false).
+        var nome = prompt("Digite um nome por favor:");
+        var idade = parseInt(prompt(nome + " digite sua idade:"));
+        var cpf = prompt(nome + " digite seu CPF");
+        if (idade >= 18) {
+            maiorIdade = true;
+        } else {
+            maiorIdade = false;
+        }
+        var pessoa = [nome, idade, cpf, maiorIdade]
+        document.write(pessoa);
+        document.write("<br>............................................<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

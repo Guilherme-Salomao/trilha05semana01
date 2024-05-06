@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //Mostre os números de 1 a 50 na tela, dizendo se é par ou ímpar:
+        var numero = 1;
+        while (numero <= 50) {
+            // Verifica se o número é divisível por 2
+            if (numero % 2 === 0) {
+                document.write(numero + " é par");
+                document.write("<br>");
+            } else {
+                document.write(numero + " é impar --- ");
+                //document.write("<br>");
+            }
+            numero++;
+        }
+        document.write("----------------------------------------------------- <br>");
+
+        //Mostre apenas os múltiplos de 3 entre 1 e 100:
+        for (numero = 1; numero <= 100; numero++) {
+            // Verifica se o número atual é múltiplo de 3
+            if (numero % 3 === 0) {
+                document.write(numero + " ");
+            }
+        }
+        document.write("<br>----------------------------------------------------- <br>");
+
+        //Mostre a seguinte sequência (de 100 até 0, pulando de dois em dois):
+        for (numero = 100; numero >= 0; numero -= 2) {
+            // Verifica se o número atual é múltiplo de 3
+            document.write(numero + " ");
+        }
+        document.write("<br>----------------------------------------------------- <br>");
+
+        //O jogo do PIM é um jogo em que o Sílvio Santos pedia para os participantes de seu programa contar de 1 até 40 da seguinte forma
+        var numero = 1;
+        while (numero <= 40) {
+            // Verifica se o número é divisível por 2
+            if (numero == 40){
+                document.write(" PIM !");
+                break;
+            }
+            if (numero % 4 === 0) {
+                document.write(" PIM, ");
+            } else {
+                document.write(numero + ", ");
+                //document.write("<br>");
+            }
+            numero++;
+        }
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

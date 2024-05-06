@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //Crie um programa que recebe uma quantidade máxima de 10 de letras e ao final exibe todas elas no console.
+        //Crie uma função chamada recebeLetra para pegar a letra e colocar na lista de letras.
+
+        // Função para receber as letras do usuário
+        function receberLetras() {
+            var letras = []; // Array para armazenar as letras
+            var contador = 0; // Contador para controlar a quantidade máxima de letras
+
+            // Loop para receber as letras até atingir o máximo de 10 ou até o usuário digitar "fim"
+            while (contador < 10) {
+                var letra = prompt("Digite apenas uma letra ou 'fim' para parar:");
+                // Verifica se o usuário digitou "fim" para parar
+                if (letra.toLowerCase() === "fim") {
+                    break;
+                }
+                // Verifica se a entrada é uma única letra
+                if (letra.length === 1 && letra.match(/[a-zA-Z]/)) {
+                    letras.push(letra); // Adiciona a letra ao array
+                    contador++; // Incrementa o contador
+                } else {
+                    alert("Por favor, digite apenas uma letra do alfabeto.");
+                }
+            }
+
+            return letras; // Retorna o array de letras
+        }
+        // Função para exibir as letras no console
+        function exibirLetras(letras) {
+            console.log("As letras digitadas foram:");
+            letras.forEach(letra => {
+                console.log(letra);
+            });
+        }
+        // Chama a função para receber as letras do usuário
+        var letrasDigitadas = receberLetras();
+        // Chama a função para exibir as letras no console
+        exibirLetras(letrasDigitadas);
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

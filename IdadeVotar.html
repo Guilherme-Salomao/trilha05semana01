@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //No Brasil, uma pessoa é obrigada a votar se tiver idade entre 18 e 70 anos. Acima de 70 anos o voto é opcional,
+        //assim como para quem tem 16 ou 17 anos. Quem ainda não completou 16 anos não pode votar. Através de estruturas 
+        //condicionais, crie um programa que dirá se uma pessoa pode ou não votar, de acordo com a idade que será armazenada em uma variável.
+
+        function votacao(nome, idade) {
+            if (idade >= 70) {
+                return document.write(nome + ", você tem " + idade + " anos de idade, sendo assim fica opcional sua votação.");
+            } 
+            if (idade <=17) {
+                return document.write(nome + ", você tem " + idade + " anos de idade, sendo como ainda é menor de idade sua votação é opcional.");
+            }
+            else{
+                return document.write(nome + ", você tem " + idade + " anos de idade, você é obrigado a votar.");
+            }
+        }
+
+        var nome = prompt("Digite seu nome");
+        var idade = parseInt(prompt(nome + ", digite sua idade"));
+        votacao(nome, idade);
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
